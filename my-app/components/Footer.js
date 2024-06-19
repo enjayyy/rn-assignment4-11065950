@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image} from 'react-native'
 import React from 'react'
 
 const Footer = () => {
   return (
     <View>
     <View style={styles.footerContainer}>
-      <Text>Footer</Text>
-      <Text>Footer</Text>
-      <Text>Footer</Text>
+     <Image icon></Image>
+     <Image></Image>
+     <Image></Image>
     </View>
 
     <Text style={styles.register}>Haven't an account? <Text style={{color:'#356899'}}onPress={() => Linking.openURL('#')}>Register</Text></Text>
