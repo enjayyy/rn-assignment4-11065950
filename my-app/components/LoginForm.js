@@ -1,13 +1,42 @@
-import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import { Alert, Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import React, { useState } from 'react'
+import { useNavigation } from '@react-navigation/native'
 
-const LoginForm = () => {
+const LoginForm = ({}) => {
+  const navigation =useNavigation();
+
+  const [name,setName] =useState("");
+  const [email,setEmail] =useState("");
+
+  const HandleLogin=() => {
+    if (name.trim()==="" || email.trim() ==="" )
+      {
+        Alert.alert("Please enter a valid email and name")
+      }else{
+
+        navigation.navigate('Home', {name, email});
+      }
+  }
+
+
   return (
+    
     <View style={styles.formContainer} >
-      <TextInput style={styles.loginDetails} placeholder='Name'></TextInput>
-      <TextInput style={styles.loginDetails} placeholder='Email'></TextInput>
+      <TextInput 
+      style={styles.loginDetails} 
+      placeholder='Name'
+      value={name}
+      onChangeText={text => setName(text)}>
+      </TextInput>
 
-    <TouchableOpacity style={styles.loginBtn}><Text style={{color: 'white'}} >Log in</Text></TouchableOpacity>
+      <TextInput 
+      style={styles.loginDetails}
+       placeholder='Email'
+        value={email}
+        onChangeText={text => setEmail(text)}>
+       </TextInput>
+
+    <TouchableOpacity style={styles.loginBtn} onPress= {HandleLogin}><Text style={{color: 'white'}} >Log in</Text></TouchableOpacity>
 
     <Text style={{fontSize: 12, marginTop: 21, marginLeft: 21, color:'#AFB0B6' }}>_________________ Or continue with __________________</Text>
     </View>
