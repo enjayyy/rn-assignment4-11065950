@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const JobCard = ({ jobTitle, companyName, location, isFeatured,salary, icon, customStyle}) => {
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
     width: 320,
     height:190,
     marginLeft:24,
-    marginTop: 25,
+    marginTop: 15,
     padding: 18,
     borderRadius: 24,
     marginRight: 1,
@@ -92,8 +91,8 @@ const styles = StyleSheet.create({
  location:{
     color: 'white',
     fontWeight:'100',
-
  }
+ 
 
 });
 

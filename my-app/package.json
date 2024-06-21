@@ -14,6 +14,7 @@
     "@react-navigation/native-stack": "^6.9.26",
     "expo": "~51.0.14",
     "expo-status-bar": "~1.12.1",
+    "node-modules": "^1.0.1",
     "react": "18.2.0",
     "react-native": "0.74.2",
     "react-native-gesture-handler": "^2.16.2",
@@ -25,5 +26,9 @@
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "description": "This repository contains the implementation of Assignment 4 for the DCIT202 Mobile Application Development course. The assignment involves recreating a design as seen in the provided UI mockup, implementing login functionality, displaying user information on the home screen, designing and creating functional components for popular and featured job cards, and styling the application to match the UI design.",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

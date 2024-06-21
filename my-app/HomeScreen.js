@@ -144,7 +144,7 @@ const popularJobs = [
     location: 'Lagos, Nigeria',
     salary: '$180,000',
     isFeatured: false,
-    icon: 'md-lock',
+    icon: require('./assets/burgerk.png'),   
     customStyle: { backgroundColor: '#FFFFFF' }, // Custom style for this card
   },
   {
@@ -153,7 +153,7 @@ const popularJobs = [
     location: 'Cairo, Egypt',
     salary: '$160,000',
     isFeatured: true,
-    icon: 'md-cube',
+    icon: require('./assets/burgerk.png'),   
     customStyle: { backgroundColor: '#FFFFFF' }, // Custom style for this card
   },
   {
@@ -162,7 +162,7 @@ const popularJobs = [
     location: 'Casablanca, Morocco',
     salary: '$150,000',
     isFeatured: false,
-    icon: 'md-code',
+    icon: require('./assets/burgerk.png'),   
     customStyle: { backgroundColor: '#FFFFFF' }, // Custom style for this card
   },
   {
@@ -171,7 +171,7 @@ const popularJobs = [
     location: 'Accra, Ghana',
     salary: '$175,000',
     isFeatured: true,
-    icon: 'md-sync',
+    icon: require('./assets/burgerk.png'),   
     customStyle: { backgroundColor: '#FFFFFF' }, // Custom style for this card
   },
   {
@@ -180,7 +180,7 @@ const popularJobs = [
     location: 'Dakar, Senegal',
     salary: '$210,000',
     isFeatured: false,
-    icon: 'md-cloud-outline',
+    icon: require('./assets/burgerk.png'),   
     customStyle: { backgroundColor: '#FFFFFF' }, // Custom style for this card
   },
   {
@@ -189,7 +189,7 @@ const popularJobs = [
     location: 'Tunis, Tunisia',
     salary: '$190,000',
     isFeatured: true,
-    icon: 'md-clipboard',
+    icon: require('./assets/burgerk.png'),   
     customStyle: { backgroundColor: '#FFFFFF' }, // Custom style for this card
   }
 ];
@@ -314,7 +314,7 @@ title:{
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: 20,
     marginLeft: 35,
   },
   searchInput: {
